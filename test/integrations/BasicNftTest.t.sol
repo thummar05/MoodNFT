@@ -5,22 +5,23 @@ import {Test} from "forge-std/Test.sol";
 import {DeployBasicNft} from "../../script/DeployBasicNft.s.sol";
 import {BasicNft} from "../../src/BasicNft.sol";
 
-contract BasicNftTest is Test{
-    DeployBasicNft public deployer ;
+contract BasicNftTest is Test {
+    DeployBasicNft public deployer;
     BasicNft public basicNft;
     address public USER = makeAddr("user");
-    string public constant ChefSimba = "https://ipfs.io/ipfs/bafybeig37ioir76s7mg5oobetncojcm3c3hxasyd4rvid4jqhy4gkaheg4"; 
+    string public constant ChefSimba =
+        "https://ipfs.io/ipfs/bafybeig37ioir76s7mg5oobetncojcm3c3hxasyd4rvid4jqhy4gkaheg4";
 
-    function setUp() public{
+    function setUp() public {
         deployer = new DeployBasicNft();
         basicNft = new BasicNft();
     }
 
-    function testNameIsCorrect() public view{
+    function testNameIsCorrect() public view {
         string memory expectedName = "Chef Simba";
-        string memory actualName = basicNft.name(); 
+        string memory actualName = basicNft.name();
 
-        assert(keccak256(abi.encodePacked(expectedName))==keccak256(abi.encodePacked(actualName)));
+        assert(keccak256(abi.encodePacked(expectedName)) == keccak256(abi.encodePacked(actualName)));
     }
 
     function testCanMintAndHaveABalance() public {
