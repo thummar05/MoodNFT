@@ -28,16 +28,16 @@ Mood NFT is an ERC721 smart contract that allows users to mint NFTs representing
 
 1. Clone the repository:
    ```bash
-       git clone https://github.com/thummar05/MoodNFT.git
-       cd MoodNFT
+   git clone https://github.com/thummar05/MoodNFT.git
+   cd MoodNFT
    
 2. Set up the project:
     ```bash
-       forge init
+   forge init
    
 3. Compile the smart contract:
    ```bash
-       forge build
+   forge build
 
 
 ### Usage
