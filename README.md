@@ -32,18 +32,20 @@ Mood NFT is an ERC721 smart contract that allows users to mint NFTs representing
        cd MoodNFT
    
 2. Set up the project:
+    ```bash
        forge init
    
 3. Compile the smart contract:
+   ```bash
        forge build
 
 
 ### Usage
-    Minting a Mood NFT: Call the mint() function to create a new Mood NFT. The initial mood will be set to SAD.
+   Minting a Mood NFT: Call the mint() function to create a new Mood NFT. The initial mood will be set to SAD.
 
-    Flipping Mood: Call the flipMood(uint256 tokenId) function to change the mood of your NFT.
+   Flipping Mood: Call the flipMood(uint256 tokenId) function to change the mood of your NFT.
 
-    Token URI: The tokenURI(uint256 tokenId) function provides the metadata of the NFT, including the SVG image based on its mood.
+   Token URI: The tokenURI(uint256 tokenId) function provides the metadata of the NFT, including the SVG image based on its mood.
 
 ### Contributing
-    Feel free to open issues or submit pull requests to improve the Mood NFT project.
+   Feel free to open issues or submit pull requests to improve the Mood NFT project.
